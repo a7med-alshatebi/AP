@@ -1,4 +1,4 @@
-@import url('https://fonts.googleapis.com/css?family=Roboto:400,500,600,700,800,900&display=swap');
+@import url('https://fonts.googleapis.com/css?family=Roboto:300,400,500,600,700,800,900&display=swap');
 
 *{
     margin: 0;
@@ -631,7 +631,7 @@ footer ul li{
         position: absolute;
         top: 100%;
         right: 0;
-        width: 50%;
+        width: 100%;
         padding: 1rem 3%;
         background: black;
         border-bottom-left-radius: 2rem;
@@ -654,13 +654,21 @@ footer ul li{
         margin: 5rem 4rem;
     }
 
+    .home-content{
+        text-align: center;
+        align-items: center;
+        width: 100%;
+    }
+
     .home-content h3{
         font-size: 2.6rem;
+
     }
 
     .home-content h1{
-        font-size: 8rem;
+        font-size: 7rem;
         margin-top: 3rem;
+        width: 100%;
     }
 
     .home-content p{
@@ -676,13 +684,40 @@ footer ul li{
         margin-bottom: 3rem;
     }
 
-    .services-container{
+    .services-container {
         grid-template-columns: repeat(1,1fr);
+    }
+
+    .service-info{
+        padding: 2rem 2rem;
+        display: flex;
+        flex-direction: column;
+        justify-content: left;
+        align-items: baseline;
+        max-height: 100px;
+        text-align: left;
+    }
+
+    .service-info p{
+        font-size: 1.6rem;
+        font-weight: 600;
+        line-height: 1.1;
+        margin: auto;
+        max-height: 100px;
+    }
+    .service-info h4{
+        font-size: 2.5rem;
+        font-weight: 800;
+        line-height: 2;
+    }
+
+    .btn{
+        padding: 1rem 5rem;
+        font-size: 1.6rem;
+        
     }
 
 
 }
-
-
 
 
