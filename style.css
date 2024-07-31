@@ -717,6 +717,20 @@ footer ul li{
         
     }
 
+    .navbar{
+        position: absolute;
+        top: 100%;
+        right: 0;
+        width: 35%;
+        padding: 1rem 3%;
+        background: black;
+        border-bottom-left-radius: 2rem;
+        border-left: 2px solid var(--main-color);
+        border-bottom: 2px solid var(--main-color);
+        display: none;
+        backdrop-filter: blur(20px);
+    }
+
 
 }
 
