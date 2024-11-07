@@ -130,7 +130,7 @@ span{
     position:relative;
     top: 4rem;
     width: 35rem;
-    height: 35rem;
+    height: 38rem;
     border-radius: 50%;
     box-shadow: 0 0 25px var(--main-color);
     cursor: pointer;
@@ -679,6 +679,7 @@ footer ul li{
 
     .home-img img{
         width: 56vw;
+        height: 59vw;
     }
 
     .services h2{
