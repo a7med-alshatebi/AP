@@ -3,6 +3,8 @@ let navbar = document.querySelector('.navbar');
 let sections = document.querySelectorAll('section');
 let navlinks = document.querySelectorAll('header nav a');
 
+alert('WELCOME TO MY PORTFOLIO WEBSITE');
+
 
 window.onscroll = () => {
     sections.fortEach(sec => {
