@@ -25,3 +25,8 @@ menuIcon.onclick = () => {
     menuIcon.classList.toggle('bx-x');
     navbar.classList.toggle('active');
 }
+
+
+const aa = prompt('Enter your name');
+alert('Hi ' + aa + ' Welcome to my profile');
+console.log(aa);
