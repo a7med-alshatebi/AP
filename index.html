@@ -1,26 +1,54 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="en" class="dark">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Portofilo</title>
     <link rel="stylesheet" href="style.css">
     <link href='https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css' rel='stylesheet'>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <script>
+    tailwind.config = {
+      darkMode: 'class'
+    }
+  </script>
+  <style>
+    .header {
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      padding: 1rem;
+    }
+    .navbar a {
+      margin: 0 1rem;
+    }
+  </style>
 </head>
 <body>
+    
     <header class="header">
         <a href="#Home" class="logo">AHMED
             <span>AL-SHATEBI</span></a>
 
+        <i class="bx bx-menu" id="menu-icon"></i>
 
-            <i class="bx bx-menu" id="menu-icon"></i>
-
-            <nav class="navbar">
-                <a href="#home" class="active">Home</a>
-                <a href="#education">education</a>
-                <a href="#services">Services</a>
-                <a href="#contact">contact</a>
-            </nav>
+        <nav class="navbar">
+            <a href="#home" class="active">Home</a>
+            <a href="#education">education</a>
+            <a href="#services">Services</a>
+            <a href="#contact">contact</a>
+        </nav>
+        <button 
+            onclick="document.documentElement.classList.toggle('dark')"
+            class="fixed top-4 right-4 p-2 rounded-lg bg-gray-200 dark:bg-gray-700 hover:bg-gray-300 dark:hover:bg-gray-600 transition-colors duration-200"
+        >
+            <svg xmlns="http://www.w3.org/2000/svg" class="w-6 h-6 hidden dark:block" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M12 3v1m0 16v1m9-9h-1M4 12H3m15.364 6.364l-.707-.707M6.343 6.343l-.707-.707m12.728 0l-.707.707M6.343 17.657l-.707.707M16 12a4 4 0 11-8 0 4 4 0 018 0z" />
+            </svg>
+            <svg xmlns="http://www.w3.org/2000/svg" class="w-6 h-6 block dark:hidden" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M20.354 15.354A9 9 0 018.646 3.646 9.003 9.003 0 0012 21a9.003 9.003 0 008.354-5.646z" />
+            </svg>
+        </button>
     </header>
 
     <section class="home" id="home">
